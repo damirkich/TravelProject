@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+body {
+  height: 741px;
+  width: 375px;
+}
+
+.title {
+  width: 314px;
+  height: 184px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+  margin-top: 171px;
+}
+
+.description {
+  width: 314px;
+  height: 120px;
+  margin-top: 36px;
+  margin-bottom: 41px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #6f7787;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 314px;
+  height: 73px;
+  border-radius: 122px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  gap: 24px;
+  background: #dd2242;
+  border-style: none;
+
+  &__text {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our {
+  height: 741px;
+  background-image: url(../images/our/bg-mob.svg), url(../images/our/bg2-mob.svg);
+  background-position: bottom, top;
+  background-repeat: no-repeat;
+}
