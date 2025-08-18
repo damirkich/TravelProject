@@ -86,7 +86,7 @@
   }
 
   &__subtitle {
-    max-width: 511px;
+    max-width: 314px;
     margin-top: 20px;
     font-family: DM Sans sans-serif;
     font-weight: 400;
@@ -96,6 +96,7 @@
     text-align: center;
     color: #6f7787;
     @media (min-width: 768px) {
+      max-width: 511px;
       font-size: 18px;
       line-height: 156%;
       letter-spacing: 0.01em;
