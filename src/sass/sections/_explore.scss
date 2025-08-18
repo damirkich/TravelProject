@@ -1,3 +1,52 @@
-.explore {
-    background-color: #89357348;
+.explore__section {
+    background-image: url('../images/explorebg.jpg');
+    background-position: top -800px left -850px;
+    background-repeat: no-repeat;
+    background-size: 500% auto;
+
+    &--title {
+        font-family: $font-family;
+    }
+
+    @media (min-width: 1280px) {
+        background-position: top -200px left 0px;
+        background-size: 100% auto;
+    }
+
+    @media  (min-width: 768px) and (max-width: 1279px) {
+        background-position: center;
+        background-size: 300% auto;
+    }
+}
+
+.bythenumbers__subsection {
+    background-color: #020c21;
+    opacity: 0.9;
+
+    &--title {
+        font-family: $font-family;
+    }
+
+    &--desc {
+        color: $text-lighten;
+        font-family: $font-family;
+        letter-spacing: 0.03em;
+    }
+
+    &--list {
+
+
+        &-item {
+            &-number {
+                font-family: $font-family;
+                color: $main-red;
+            }
+
+            &-desc {
+                color: $text-lighten;
+                font-family: $font-family;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
 }
