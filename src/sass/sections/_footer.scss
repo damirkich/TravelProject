@@ -1,0 +1,160 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #010a20;
+  .container {
+    width: 100%;
+
+    @extend %flex;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 25px;
+      margin-right: 60px;
+    }
+    @media (min-width: 1024px) {
+      margin-left: 50px;
+      margin-right: 123px;
+    }
+  }
+
+  &__logo {
+    margin-top: 148;
+    width: 174px;
+    height: 65px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+      width: 113px;
+      height: 42.25px;
+    }
+    @media (min-width: 1024px) {
+      width: 174px;
+      height: 65px;
+    }
+  }
+
+  &__list {
+    @extend %flex;
+    gap: 36px;
+    padding: 0;
+    list-style: none;
+    margin-top: 36px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #dd2242;
+    }
+  }
+
+  &__link {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: white;
+    text-decoration: none;
+    transition: linear 150ms;
+    transform: scale(105%);
+    &:hover {
+      color: #dd2242;
+    }
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    &:hover {
+      color: #dd2242;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin-top: 0;
+      gap: 15px;
+    }
+    @media (min-width: 1024px) {
+    }
+  }
+
+  &__copyright {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: white;
+    text-decoration: none;
+    margin-top: 36px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin-top: 0;
+      font-size: 12px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.icon-wrapper {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media (min-width: 1024px) {
+  }
+  i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: linear 150ms;
+
+    &:hover {
+      color: #dd2242;
+    }
+  }
+}
+.fa-linkedin-in {
+  font-size: 25px;
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1024px) {
+  }
+}
