@@ -9,14 +9,11 @@
         background-image: url(../images/life/bg-lap.png);
         background-repeat: no-repeat;
         background-size: cover;
-        // background-position: ;
+        background-position: 0px 0px;
     }
 
     @media (min-width: 1020px) {
         background-image: url(../images/life/bg-lap.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0px 0px;
     }
 
     .overlay {
@@ -27,8 +24,12 @@
         border-radius: 10px;
         width: 314px;
         height: 240px;
-        padding-bottom: 40px;
         display: block;
+        object-fit: cover;
+
+        @media(min-width: 320px){
+            padding-bottom: 40px;
+        }
 
         @media(min-width: 768px) {
             margin: 0 auto;
@@ -37,11 +38,11 @@
         }
 
         @media(min-width: 1024px) {
-            width: 550px;
+            width: 700px;
             height: 350px;
         }
 
-        @media (min-width: 1440px){
+        @media (min-width: 1440px) {
             width: 1056px;
             height: 594px;
         }
@@ -53,8 +54,8 @@
         height: 176px;
 
         @media (min-width: 1024px) {
-            float: left;
             width: 45%;
+            height: auto;
         }
     }
 
@@ -62,12 +63,13 @@
         border-radius: 5px;
 
         @media (min-width: 768px) {
-            width: 300px;
+            width: 314px;
         }
 
         @media (min-width: 1024px) {
             float: left;
             width: 45%;
+            height: auto;
         }
     }
 
@@ -86,7 +88,7 @@
         }
 
         @media (min-width: 1440px) {
-            width: 50%;
+            width: 1056px;
             padding: 144px 0 67px 0;
         }
     }
@@ -98,22 +100,23 @@
 
         @media(min-width: 768px) {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
         }
 
         @media (min-width: 1024px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             align-items: center;
-            gap: 75px;
+            gap: 30px;
             text-align: center;
         }
-        
-        div{
-            width: 336px;
-            float: right;
+
+        div {
+            width: auto;
+            min-height: 120px;
+
+            @media(max-width: 1024px){
+                padding-bottom: 40px;
+            }
         }
     }
 
@@ -124,21 +127,20 @@
             align-self: flex-end;
         }
 
-        @media(min-width: 1024px){
-            float: left;
+        @media(min-width: 1024px) {
             width: 642px;
+            display: flex;
+            gap: 20px;
             align-items: center;
-        }
-    }
-
-    &__li:nth-child(2) {
-        @media(min-width: 768px) {
-            align-self: flex-start;
+            padding-bottom: 200px;
+            padding-top: 100px;
         }
 
-        @media (min-width: 1024px){
-            float: right;
+        @media(min-width: 1440px) {
+            padding-bottom: 214px;
+            padding-top: 125px;
         }
+
     }
 
     &__li--title {
@@ -146,18 +148,19 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 150%;
-        text-align: center;
-        color: #fff;
+        color: $white;
         padding: 40px 0 15px 0;
-        margin: 0;
+        margin: 0 auto;
+        text-align: center;
 
-        @media (min-width: 1024) {
-            float: right;
-            font-family: $font-family;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 150%;
-            color: $white;
+        @media(min-width: 768px) {
+            padding: 20px 0;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 15px;
+            text-align: left;
+            padding: 0 0 15px 0;
         }
     }
 
@@ -168,23 +171,13 @@
         line-height: 150%;
         letter-spacing: 0.03em;
         text-align: center;
-        color: #fff;
+        color: $white;
         margin: 0 auto;
-        padding-bottom: 40px;
         opacity: 0.7;
 
         @media (min-width: 1024px) {
-            float: right;
-            font-family: $font-family;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 156%;
-            letter-spacing: 0.03em;
-            color: $white;
+            font-size: 13px;
+            text-align: left;
         }
-    }
-
-    &__li--text:nth-child(2) {
-        padding-bottom: 40px;
     }
 }
