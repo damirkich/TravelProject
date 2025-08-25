@@ -4,6 +4,11 @@
     background-repeat: no-repeat;
     background-size: 500% auto;
 
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+           only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/explorebg@2x.webp');
+    }
+
     &--title {
         font-family: $font-family;
     }

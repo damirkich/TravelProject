@@ -3,12 +3,23 @@
         <h2 class="explore__section--title font-bold text-[40px] text-center pb-[30px]">Explore Our <br class="lg:hidden block">Secrets </h2>
         <div class="explore__section--content">
             <div class="explore__section--image-wrap flex justify-center items-center">
-        <img class="explore__section--arrow w-[12px] h-[20px] mr-[9px] xl:mr-[63px] md:mr-[30px]" src="./images/arrowleft.svg" alt="arrow">
+        <!-- <img class="explore__section--arrow w-[12px] h-[20px] mr-[9px] xl:mr-[63px] md:mr-[30px]" src="./images/arrowleft.svg" alt="arrow"> -->
         <img class="explore__section--image w-[314px] h-[200px] block xl:hidden" src="./images/explore.png" alt="Explore Image">
         <div class="gap-[31px] flex flex-row">
-        <img class="explore__section--image w-[314px] h-[200px] hidden xl:block" src="./images/exploredt1.png" alt="Explore Image">
-        <img class="explore__section--image w-[314px] h-[200px] hidden xl:block" src="./images/exploredt2.png" alt="Explore Image">
-        <img class="explore__section--image w-[314px] h-[200px] hidden xl:block" src="./images/exploredt3.png" alt="Explore Image">
+        <!-- <img class="explore__section--image w-[314px] h-[200px] hidden xl:block" src="./images/exploredt1.png" alt="Explore Image"> -->
+        <picture>
+          <source srcset="./images/explore-mob@1x.png 1x
+          ./images/explore-mob@2x.webp 2x"/>
+          <source srcset="./images/explore1-desk@1x.png 1x
+          ./images/explore1-desk@2x.webp 2x"/>
+          <source srcset="./images/explore2-desk@1x 1x
+          ./images/explore2-desk@2x 2x"/>
+          <source srcset="./images/explore3-desk@1x 1x
+          ./images/explore3-desk@2x 2x" />
+          <img src="../images/explore-mob@1x.png" alt="img" class="explore__section--image w-[314px] h-[200px] hidden xl:block" />
+        </picture>
+        <!-- <img class="explore__section--image w-[314px] h-[200px] hidden xl:block" src="./images/exploredt2.png" alt="Explore Image">
+        <img class="explore__section--image w-[314px] h-[200px] hidden xl:block" src="./images/exploredt3.png" alt="Explore Image"> -->
         </div>
         <img class="explore__section--arrow w-[12px] h-[20px] ml-[9px] xl:ml-[63px] md:ml-[30px]" src="./images/arrowright.svg" alt="arrow">
             </div>
